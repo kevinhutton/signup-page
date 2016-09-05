@@ -68,7 +68,7 @@ class MainPage(webapp2.RequestHandler):
             errorMessages['passworderror'] = "Invalid Passwords"
             errorFound = True
         if email and not self.validateEmail(email):
-            errorMessages['emailerror'] = {"Invalid email"}
+            errorMessages['emailerror'] = "Invalid email"
             errorFound = True
 
         if errorFound:
